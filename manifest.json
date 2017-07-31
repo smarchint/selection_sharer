@@ -1,0 +1,31 @@
+{
+	"manifest_version" : 2,
+	"name" : "NoteOverflow",
+	"description" : "make notes effortlessly",
+	"version" : "1.0.0",
+
+	"background":{
+		"scripts" : ["background.js"],
+		"persistent" : false
+	},
+	"content_scripts" : [{
+		"matches": [
+			"http://*/*",
+			"https://*/*"
+		],
+		"js" : [
+			//external dependencies
+			"dependencies/jquery-min.js",
+
+			//main scripts
+			"contentscript.js"
+		]
+	}],
+	"browser_action" : {
+		"default_popup" : "popup/index.html",
+		"default_title" : "note-overflow"
+	},
+	"permissions": [
+		"activeTab"
+	]
+}

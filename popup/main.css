@@ -1,0 +1,46 @@
+body{
+	display: inline-block;
+	margin:0;
+	padding:0;
+	color:white;
+}
+
+#app{
+	margin:5px;
+	/*color:#d8d8d6;*/
+	color:#d8d8d6;
+	background-color:#21232d;
+	height: 500px;
+	width:300px;
+}
+
+/* custom css */
+
+.note{
+    border: 1px solid white;
+    border-top:none;
+    padding: 4px;
+}
+
+.note:hover{
+	color:#21232d;
+	font-weight:bold;
+	background-color:#d8d8d6; 
+}
+
+
+
+
+/* conponent css */
+.alink{
+	color:#57c7ff;
+}
+/* add transition here */
+.alink:hover{
+	color:#57c7ff;
+}
+
+.heading{
+	color:#f92672
+}
+
