@@ -1,21 +1,23 @@
-var getSelectedText = function () {
-  var selectedText = '';
 
-  if (window.getSelection()) {
-    selectedText = window.getSelection();
-  } else if (document.getSelection()) {
-    selectedText = document.getSelection();
-  } else if (document.selection) {
-    selectedText = document.selection.createRange().text;
-  }
+function test(){
+	chrome.extension.sendMessage({}, function(response) {
+		var readyStateCheckInterval = setInterval(function() {
+		if (document.readyState === "complete") {
+			clearInterval(readyStateCheckInterval);
 
-  return selectedText;
-};
+			// ----------------------------------------------------------
+			// This part of the script triggers when page is done loading
+			console.log("Hello. This message was sent from scripts/inject.js");
+			// ----------------------------------------------------------
+
+		}
+		}, 10);
+	});
+}
+
+
 
 
 $(document).ready(function(){
-	$(window).mouseup(function(){
-		var selectedText = window.getSelection().toString();
-		console.log(selectedText);
-	})
+	test();
 })
