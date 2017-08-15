@@ -6,7 +6,7 @@ chrome extension to take notes using user selections.
 ## external libries included/modified
 + Jquery
 + [SelectionSharer](https://github.com/xdamman/selection-sharer) - very nice view for medium like popup.
-+ [Rangy](https://github.com/timdown/rangy) - great suite of rich functionalities to deal with selection and rnge objects.
++ [Rangy](https://github.com/timdown/rangy) - great suite of rich functionalities to deal with selection and range objects.
 ## to do 
 + integrate rangy and selectionsharer. [bug-fixes remaining]
 + make persistent selection hashes (cookie | Db | file).
