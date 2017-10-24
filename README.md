@@ -1,4 +1,4 @@
-# noteOverflow
+# chrome extension : selection_sharer
 chrome extension to take notes using user selections.
 # why?
 + to get markdown files on notes to post them on a blog using [gatsby](https://github.com/gatsbyjs/gatsby) a static html generator.
